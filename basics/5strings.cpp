@@ -17,10 +17,16 @@ int main() {
     // size of string object using length method
     cout << greeting.length() << endl;
 
-    string name;
+    string name, T;
     cout << "Enter your name: ";
     // Taking string as input
     getline(cin, name);
+
+    //spliting the sentence on the basis of charactors
+    stringstream X(name);
+    while(getline(X, T, ' ')){
+        cout<<T<<endl;
+    }
     
     cout << "Entered name: " << name<<endl;
 
