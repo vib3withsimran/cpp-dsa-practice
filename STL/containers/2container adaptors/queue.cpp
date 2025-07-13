@@ -1,5 +1,6 @@
 #include<iostream>
 #include<queue>
+#include<stack>
 using namespace std;
 //fifo- first in, first out
 //A ticket counter line - first person in line gets served first
@@ -32,7 +33,26 @@ int main(){
     cout<<"back element: "<<q.back()<<endl;
 
 
-    //reversing and swaping is left
+    //reversing
+    stack<int> s;
+    cout<<"q queue:- \n";
+    while(!q.empty()){
+        s.push(q.front());
+        cout<<q.front()<<" ";
+        q.pop();
+    }
+    cout<<"\nreverse of q queue:- \n";
+    while(!s.empty()){
+        q.push(s.top());
+        cout<<s.top()<<" ";
+        s.pop();
+    }
+
+    //swaping syntax
+    // queue1.swap(queue2);
+    // swap(queue1, queue2);
+
+
 
     return 0;
 }

@@ -29,19 +29,51 @@ void printNNnums(int n){
     printNNnums(n-1);
 }
 
+int factorial(int n){
+    if(n==0) return 1;
+
+    return (n * factorial(n-1));
+}
+
+void reverseArray(int arr[], int start , int end){
+    if(start < end){
+        swap(arr[start], arr[end]);
+        start++;
+        end--;
+    }
+
+}
+
 int main() {
+    //printing hello 5 times
     cout<<"Printing 5 times hello: "<<endl;
     printHello(5);
 
+    //sum of n numbers 
     cout<<"Sum of n numbers:"<<endl;
     int sum= nSum(2);
     cout<<sum;
 
+    //printing 1 to n numbers 
     cout<<"\nprinting 1 to N numbers"<<endl;
     printNnums(1, 15);
 
+    //printing n to 1 numbers
     cout<<"\nprinting N to 1 numbers"<<endl;
     printNNnums(15);
+
+    //factorial 
+    cout<<"\nFactorial of 5: "<<factorial(5)<<endl;
+
+    //reverse an array
+    int n=5;
+    int arr[] = {1,2,3,4,5};
+    reverseArray(arr, 0, n-1);
+    cout<<"reverse of an array: ";
+    for(int i=0;i<n; i++){
+        cout<<arr[i]<<" ";
+    }
+
 
     return 0;
 }
