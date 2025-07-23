@@ -29,6 +29,26 @@ bool palindrome(string s){
     return 1;
 }
 
+bool plaindrome2(string s){
+    string t;
+        for(char c : s){
+            if(c >= 'a' && c <= 'z'){
+                t += c;
+            }else if(c>='A' && c<='Z'){
+                t += tolower(c);
+            }else if(c>='0' && c<='9'){
+                t+= c;
+            }
+        }
+        int n = t.size();
+        for(int i = 0; i < n/2;i++){
+            if(t[i]!=t[n-i-1]){
+                return false;
+            }
+        }
+        return true;
+}
+
 int main(){
     string s= "A man, a plan, a canal: Panama";
     if(palindrome(s)==0){
