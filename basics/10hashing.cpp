@@ -1,7 +1,21 @@
 #include<iostream>
+#include<unordered_map>
+#include<string>
 using namespace std;
 
 // the definition of hashing in a naive way, it is nothing but the combination of the steps, pre-storing, and fetching.
+
+void Frequency(int arr[], int n)
+{
+    unordered_map<int, int> map;
+ 
+    for (int i = 0; i < n; i++)
+        map[arr[i]]++;
+ 
+    // Traverse through map and print frequencies
+    for (auto x : map)
+        cout << x.first << " " << x.second << endl;
+}
 
 int main(){
     int n;
@@ -45,6 +59,13 @@ int main(){
             cout << "Character: " << char(i) << " Frequency: " << charHas2[i] << endl; // print the frequency of each character
         }
     }
+
+//  three methods of hashing- division, folding, and mid-square method
+//divison method- taking module of the key with the size of the hash table. and if two keys have the same hash value, then we can use a linked list to store the elements in the same index of the hash table.
+
+    int arr2[6] = {10,5,10,15,10,5};
+    int m = sizeof(arr2) / sizeof(arr2[0]);
+    Frequency(arr2, m);
 
     return 0;
 }
