@@ -1,7 +1,7 @@
 #include<iostream>
 using namespace std;
 
-// he definition of hashing in a naive way, it is nothing but the combination of the steps, pre-storing, and fetching.
+// the definition of hashing in a naive way, it is nothing but the combination of the steps, pre-storing, and fetching.
 
 int main(){
     int n;
