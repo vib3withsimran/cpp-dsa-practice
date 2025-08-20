@@ -77,6 +77,7 @@ int main(){
     for(auto i: umap2){
         cout << i.first << ": " << i.second << endl; // printing key-value pairs after deletion
     }
+    
 
     //practice
     vector<string> arr = {"1", "2", "1", "END", "2"};
@@ -84,14 +85,7 @@ int main(){
     cout<<"Total opened gates: "<< countTabs(arr)<<endl;
 
 
-    cout<<"tryinggggggggg"<<endl;
-    for(int i=0; i<=10; i++){
-        cout<<i<<" ";
-    }
-    cout<<endl;
-    for(int i=0; i<=10; ++i){
-        cout<<i<<" ";
-    }
+   //to check dupliate in unordered_map
 
     return 0;
 }

@@ -9,7 +9,7 @@ int main() {
     string greeting = "Welcome to GfG!";
     
     // Accessing string
-    cout << greeting<<endl;
+    cout << greeting.at(3)<<endl;
 
     // size of string object using size() method
     cout << greeting.size() << endl;
