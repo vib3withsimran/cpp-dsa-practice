@@ -17,9 +17,9 @@ int main() {
     // Accessing first element
     cout << arr[0]<<endl;
     
-     // Updating first element
+     // Updating second element
     arr[1] = 90;
-    cout << arr[0]; 
+    cout << arr[1]<<endl; 
 
      // Traversing and printing arr
     for (int i = 0; i < 5; i++){
@@ -28,8 +28,7 @@ int main() {
     cout<<endl;
 
      // Size of one element of an array
-    cout << "Size of arr[0]: " << sizeof(arr[0])
-    << endl;
+    cout << "Size of arr[0]: " << sizeof(arr[0])<< endl;
 
     // Size of  'arr'
     cout << "Size of arr: " << sizeof(arr) << endl;
@@ -44,7 +43,7 @@ int main() {
     sized_array_notation(arr);
     unsized_array_notation(arr);
     pointer_notation(arr);
-    
+
     
     return 0;
 }
