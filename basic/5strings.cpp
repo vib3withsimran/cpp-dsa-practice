@@ -4,12 +4,17 @@
 using namespace std;
 
 int main() {
+    char str[] = {'a', 'b', 'c', '\0'}; //valid string 
+    cout<<strlen(str)<<endl;
     
+    char str1[] = "abs";
+    cout<<str[4]<<endl;
+
     // Creating a string
     string greeting = "Welcome to GfG!";
     
     // Accessing string
-    cout << greeting.at(3)<<endl;
+    cout << "at 3 "<< greeting.at(3)<<endl;
 
     // size of string object using size() method
     cout << greeting.size() << endl;
@@ -28,10 +33,10 @@ int main() {
         cout<<T<<endl;
     }
     
-    cout << "Entered name: " << name<<endl;
+    cout << "Entered name: " << name[0]<<endl;
 
    // Concatenation str1 and str2
-    greeting.append(name);
+    greeting.append(+ name);
     cout << "Concatenated string: " << greeting << endl;
 
     //to Copy a String in C++
